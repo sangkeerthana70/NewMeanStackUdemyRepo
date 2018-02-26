@@ -1,0 +1,12 @@
+Lecture-7 Express
+1-Adding Expres to the app.
+Express application variables.
+app.get reads the property. 
+and app.set that defines the property of the application.
+2-Making the app.listen method an asynchronous code by adding a callback.
+3-The app.listen method returns an object which we can use to access
+various properties of the server such as the port. To do this we
+assign the method to a variable called var server.
+var port = server.address().port;
+
+

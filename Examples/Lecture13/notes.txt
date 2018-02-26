@@ -1,0 +1,57 @@
+Lecture-9
+The index.html is served even it the index.html is omitted in the url path because
+of the static set up pointing to the public folder in the middleware app.use.
+
+Instead of serving the index.html from the static folder from the app.use 
+middleware we are going to give a subset of routes as url in the '/public' routes.
+like localhost:8080/public/index.html.
+
+Lecture-10
+Note that we need the same app.js, index.html and public folder files from Lecture9 folder.
+
+Here we will learn about middleware that acts between the request
+and response and how it can use a anonymous function to access two
+properties of the request object. req.method to see if it is a GET or POST method. 
+And also to see what the requested URL was.
+Once the console.log is executed it calls on to the next function.
+
+The order in which the middleware is used is important to run sequentially.
+We can use the middleware to a subset of routes only.
+
+Lecture-11
+Using the Express router.
+Under index.js in the routes folder (routes folder should be under the MeanStackUdemy Folder but for my convenience
+created routes folder with index.js and app.js under Lecture11 folder.)
+instantiate the express router
+rather than the whole express.
+Then export the route that we instantiated to access from the app.js file.
+
+AFter you run node app.js try to test out the userpath/api/json to see the app.get data
+displayed as {"jsonData": true}.
+To test the app.post results go to POSTMAN app and see the data returned.
+
+Lecture-12 Using Controllers to define functionality.
+1-First we create an api folder. Then we place routes and controllers under it.
+2-The controller file runs once the /api/hotels route is called.
+3-In the controller we move the function in app.get route under index.js to the controller.
+4-Next we have to require the controller file inside the index.js file.
+5-delete the inline function of app.get under the hotels route in index.js.
+and reference it with the controller variable.function name in the controller file.
+
+Lecture-13
+URL parameters.
+Defining dynamic routes with URL parameters.
+Using them in controllers.
+Note that the URL parameters are available inside the controller. They are available 
+inside the request object.
+
+
+
+
+
+
+
+
+
+
+

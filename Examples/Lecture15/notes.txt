@@ -1,0 +1,27 @@
+Lecture-14
+How to get data from Query strings.
+Using offset and count as parameters in query strings to extract the number of hotels.
+Finally we see how the query string data inside the controller is used to manipulate the data that is coming out of the server.
+Query strings are often used in a GET METHOD  to send data into the server.
+When query strings are used in a POST METHOD they can help in adding data to the body of request.
+
+BodyParser
+Unlike queey strings EXPRESS cannot deal with posted forms, so we need a middleware called
+BodyParser. We need to install this first.
+npm install --save body-parser.
+require it in app.js.
+The order in which it is put is important so it has to inbetween the static path and where
+we define the routes. This is to make sure the middleware runs before any API's run.
+See how to add a new item or hotel name using the POST method and test it in the POSTMAN
+app.
+
+Lecture-15
+How nodemon is used to restart the application automatically.
+This nodemon should only be used in a development environment.
+This has to installed globally in the main root folder.
+Configure the  nodemon.json file to  ignore changes made in the public directory.
+Note:
+You can run the nodemon only in the parent folder and not sub-folders, just like app.js.
+
+
+

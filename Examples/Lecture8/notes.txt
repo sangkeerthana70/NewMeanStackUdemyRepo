@@ -1,0 +1,19 @@
+Lecture-8 Defining url routes and sending response.
+We are using the Http get.method to chain our express app to specify the 
+path we are going to listen for and a function that we are going to run 
+when the route is being matched.
+2-HTTP status codes.
+res.send have a set of status codes that gets returned from the server by express by default
+To change it we have to set the res.status(404)in the app.get http method
+inside the function.
+3-Sending a Json response.
+While building an API we want to send some data which is json basically.
+For this we have to update the home route by adding another route.
+4-Returning static files.
+REquire path module and specify the path in the res.send of the route.
+First we return the app.js file to the browser from the /file route.
+Next we return the html file from the public folder by modifying the
+home route.
+
+
+

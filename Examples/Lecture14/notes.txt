@@ -1,0 +1,16 @@
+Lecture-14
+How to get data from Query strings.
+Using offset and count as parameters in query strings to extract the number of hotels.
+Finally we see how the query string data inside the controller is used to manipulate the data that is coming out of the server.
+Query strings are often used in a GET METHOD  to send data into the server.
+When query strings are used in a POST METHOD they can help in adding data to the body of request.
+
+BodyParser
+Unlike queey strings EXPRESS cannot deal with posted forms, so we need a middleware called
+BodyParser. We need to install this first.
+npm install --save body-parser.
+require it in app.js.
+The order in which it is put is important so it has to inbetween the static path and where
+we define the routes. This is to make sure the middleware runs before any API's run.
+
+

@@ -1,0 +1,24 @@
+1-node --version
+(installs node v4.1.2)
+(it installed v6.11.2)
+2- with node we also get a package manager called npm.
+3- to ensure this type npm --version.(3.10.10).
+4- to type in commands we need a node shell. So to initiate the shell
+type node
+5-require and module.exports(require is part of node and it will load other
+scripts)
+syntax- require('./Name of the file'); to specify the path and no .js extentsion is needed.
+
+6-how to expose a method and call it in the require module. Create a new 
+folder called talk.
+To do this create a file called goodbye.js under the talk folder
+and have a console.log inside the module.exports function and call then
+call it inside the app.js file.
+var goodbye = require('./talk/goodbye');
+7- another way of exposing the method in app.js.
+8-Asynchronous non-blocking code in node.js
+
+
+
+
+

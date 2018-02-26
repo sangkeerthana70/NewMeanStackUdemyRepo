@@ -1,0 +1,23 @@
+Lecture-32
+step-1 Find the specific document to update.(by using Module.exports.updateOne)
+step-2 update the model instance
+step-3 save the model instance and this will actually save it back to the mongoDb.
+This save method applies directly to the model instance and returns a callback which accepts two parameters, err and the second parameter is the updated document returned from the database.
+We do this by using doc.save() method where document is the model instance 
+step-4 finally send the response to the requester.
+
+Lecture-34
+Addedd delete routes for deleting a hotel and also deleting a sub-document 
+reviews through the parent document which is the hotel in this section.
+
+5a833bc17b6ca00bef683006 updated this review and this is the reviewID for the updated one.	Author senthil which I am deleting in Lecture-34
+Also deleted the hotel name called nice hotel.
+Get hotelID 5a8329756c6ea90a85e4d3e5
+DELETE /api/hotels/5a8329756c6ea90a85e4d3e5
+Hotel Deleted, id: undefined(Don't know why id is undefined)
+
+
+
+
+
+
